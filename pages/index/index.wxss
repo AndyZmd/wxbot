@@ -48,7 +48,7 @@ page {
   flex: 1;
   margin-right: 10rpx;
   padding: 5rpx 10rpx;
-  background-color: #CDB5CD;
+  background-color: #ffffff;
   border-radius: 11rpx;
   word-break: break-all;
 }
@@ -87,7 +87,7 @@ page {
 .ask-input-word button {
   height:2rem;
   min-height:2rem;
-  font-size:18px;
+  font-size:13px;
   padding:0 0.34em;
   width:100%;
   text-align: center;
