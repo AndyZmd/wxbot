@@ -1,0 +1,145 @@
+/**index.wxss**/
+@import "/wxss/we_ui/weui.wxss";
+page {
+  height: 100%;
+}
+
+.container {
+  height: 80%;
+  min-height: 97.6%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15rpx 15rpx;
+  background-color: gainsboro;
+}
+
+.chat-list {
+  flex: 1;
+  padding-bottom: 80rpx;
+}
+
+.scrool-view {
+  height: 91%
+}
+
+.chat-left {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.chat-left text {
+  flex: 1;
+  margin-left: 10rpx;
+  padding: 5rpx 10rpx;
+  background-color: white;
+  border-radius: 11rpx;
+  word-break: break-all;
+}
+
+.chat-right {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.chat-right text {
+  flex: 1;
+  margin-right: 10rpx;
+  padding: 5rpx 10rpx;
+  background-color: #CDB5CD;
+  border-radius: 11rpx;
+  word-break: break-all;
+}
+
+.avatar-img {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+}
+
+.text-video-img {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 60rpx;
+  margin-right: 5px;
+}
+
+.ask-input-word {
+  width: 96%;
+  position: fixed;
+  padding: 5rpx;
+  bottom: 5rpx;
+  display: flex;
+  align-items: center;
+}
+
+.ask-input-word input {
+  background: white;
+  border-radius: 10rpx;
+  flex: 1;
+  margin-right: 10rpx;
+  height:2rem;
+  min-height:2rem;
+}
+
+.ask-input-word button {
+  height:2rem;
+  min-height:2rem;
+  font-size:18px;
+  padding:0 0.34em;
+  width:100%;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  line-height: 2rem;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.button-hover{
+  background-color:#CCCCCC;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.olami-info{
+  font-size: 10px;
+  align-items: right;
+}
+
+.speaker{ 
+    position: fixed; 
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 30%;
+    height: 20%;
+} 
+
+.showAuthor{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.author{
+  text-align: right;
+  margin-left: 19%;
+}

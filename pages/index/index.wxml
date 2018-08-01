@@ -1,0 +1,27 @@
+<view class="container">
+  <scroll-view class="scrool-view" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{scrolltop}}" enable-back-to-top="true">
+    <view class="chat-list">
+      <block wx:for="{{chatList}}" wx:key="time">
+        <view id="roll{{index + 1}}" class="chat-left" wx:if="{{item.orientation == 'l'}}">
+          <image class="avatar-img" src="/res/image/chat.jpg"></image>
+          <text>{{item.text}}</text>
+          <image class="avatar-img"></image>
+        </view>
+        <view id="roll{{index + 1}}" class="chat-right" wx:if="{{item.orientation == 'r'}}">
+          <image class="avatar-img"></image>
+          <text>{{item.text}}{{item.url}}</text>
+          <image class="avatar-img" src="{{userLogoUrl}}"></image>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <form bindsubmit="sendChat">
+    <view class="ask-input-word">
+      <image class="text-video-img" src="/res/image/speak.png" hidden="{{keyboard}}" bindtap="switchInputType"></image>
+      <image class="text-video-img" style='width:71rpx' src="/res/image/keyboard.png" hidden="{{!keyboard}}" bindtap="switchInputType"></image>
+      <input class="input-big" hidden="{{keyboard}}" focus="{{!keyboard}}" placeholder="" confirm-type="send" name="ask_word" type="text" bindconfirm="sendChat" value="{{askWord}}"></input>
+      <button hidden="{{!keyboard}}" bindtouchstart="touchdown" bindtouchend="touchup">按住说话</button>
+    </view>
+  </form>
+</view>
+<image class="speaker" hidden="{{!isSpeaking}}" src="{{speakerUrl}}"></image>
