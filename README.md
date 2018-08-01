@@ -4,7 +4,7 @@
 #### 语音识别和语音合成使用了，微信团队开源的 同声传译小程序 插件中的功能<br>
 
 <br>
- ![image](https://github.com/AndyZmd/ImageCache/wxbot/master/res/image/text.png)<br>
+![image](https://github.com/AndyZmd/wxbot/wxbot/master/res/image/text.png)<br>
 
-###### 潦草的程序，本来的流程是将语音输入后的MP3文件传回后台解析->获得答复->合成新格式语音文件->小程序播放<br>
+###### 最近项目略闲抽空撸个潦草的小程序玩，本来的流程是将语音输入后的MP3文件传回后台解析->获得答复->合成新格式语音文件->小程序播放<br>
 ###### 后偶然发现微信团队上个月刚好开源了个同声传译，遂使用，一切都简单了.....以后抽空再多搞点功能，第一次撸小程序感觉挺方便的就是前端代码写着实在头疼。
